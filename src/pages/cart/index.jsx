@@ -13,9 +13,21 @@ const Cart = () => {
 
       <h2>Carrinho de compras</h2>
       <section>
-        {cart.map((product) => (
-          <Product product={product} key={product.id} isRemovable />
-        ))}
+        {cart.length === 0 ? (
+          <h4>Seu carrinho está vazio</h4>
+        ) : (
+          cart.map((product) => (
+            <Product product={product} key={product.id} isRemovable />
+          ))
+        )}
+        <p>
+          Total: R$
+          {cart.reduce(
+            (previousProduct, currentProduct) =>
+              previousProduct + currentProduct.price,
+            0
+          )}
+        </p>
       </section>
     </Container>
   );
