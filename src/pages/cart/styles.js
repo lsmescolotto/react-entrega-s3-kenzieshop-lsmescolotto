@@ -9,10 +9,18 @@ export const Container = styled.main`
     margin-top: 30px;
   }
   section {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      color: #333333;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 12%;
+    }
     div {
       flex-direction: row;
       height: 100px;
-      margin-top: 15px;
+      margin-bottom: 10px;
       border: solid 2px #fff;
       box-shadow: 0 0 1em #999;
       img {
@@ -37,6 +45,11 @@ export const Container = styled.main`
         border: solid 2px #7b2cbf;
       }
     }
+  }
+
+  p {
+    align-self: flex-end;
+    margin: 10px 25px 20px 0;
   }
 
   &:last-child {
