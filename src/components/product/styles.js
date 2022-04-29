@@ -5,8 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 300px;
-  height: 450px;
+  width: 270px;
+  height: 400px;
   border: solid 2px #999;
   border-radius: 10px;
   background: #ffffff;
@@ -18,12 +18,15 @@ export const Container = styled.div`
   }
 
   img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 200px;
+    border-radius: 5px;
   }
 
   h3 {
     font-size: 20px;
+    max-width: 200px;
+    text-align: center;
   }
 
   span {
